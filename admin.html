@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Inferno Nuclear - ADM</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<div id="login-box" class="login-box">
+    <h2>Painel Administrativo</h2>
+    <input id="user" type="text" placeholder="Usuário">
+    <input id="pass" type="password" placeholder="Senha">
+    <button onclick="login()">Entrar</button>
+    <p id="login-error"></p>
+</div>
+
+<div id="admin-panel" class="admin-panel" style="display:none;">
+    <h1>Gerenciamento de Produtos</h1>
+
+    <div class="form-area">
+        <h2>Novo Produto</h2>
+
+        <label>Imagem:</label>
+        <input type="file" id="imgInput">
+
+        <label>Nome do Produto:</label>
+        <input type="text" id="nomeProduto">
+
+        <label>Categoria:</label>
+        <select id="categoria" onchange="carregarSubcategorias()">
+            <option value="">Selecione</option>
+            <option value="vestuario">Vestuário</option>
+            <option value="cerveja">Cerveja</option>
+            <option value="acessorios">Acessórios</option>
+        </select>
+
+        <label>Subcategoria:</label>
+        <select id="subcategoria">
+            <option value="">Selecione uma categoria primeiro</option>
+        </select>
+
+        <label>Preço:</label>
+        <input type="number" id="preco">
+
+        <label>Estoque:</label>
+        <input type="number" id="estoque">
+
+        <button onclick="salvarProduto()">Salvar Produto</button>
+    </div>
+
+    <h2>Produtos Cadastrados</h2>
+    <div id="listaProdutos" class="lista-produtos"></div>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>
