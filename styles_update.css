@@ -1,0 +1,70 @@
+/* UPDATED LOGO SHRINK + SLIPKNOT MENU STYLE */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: black;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #C27023;
+    transition: 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.logo {
+    height: 85px;
+    transition: 0.3s ease-in-out;
+}
+
+.header.shrink .logo {
+    height: 45px;
+}
+
+.menu a, .dropbtn {
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.menu a:hover, .dropbtn:hover {
+    color: #C27023;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: black;
+    min-width: 160px;
+    border: 1px solid #C27023;
+    z-index: 999;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

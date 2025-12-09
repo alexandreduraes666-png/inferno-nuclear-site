@@ -1,24 +1,19 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <title>Inferno Nuclear - Loja Oficial</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+<!-- UPDATED HEADER FOR MENU + LOGO SHRINK -->
+<header id="header" class="header">
+    <img src="logo.png" id="logo" class="logo">
 
-<header class="header">
-    <img src="logo.png" class="logo" alt="Inferno Nuclear">
     <nav class="menu">
-        <a href="index.html">Home</a>
+        <a href="index.html">HOME</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">CATEGORIAS</button>
+            <div class="dropdown-content">
+                <a href="categoria_vestuario.html">VESTUÁRIO</a>
+                <a href="categoria_cerveja.html">CERVEJAS</a>
+                <a href="categoria_acessorios.html">ACESSÓRIOS</a>
+            </div>
+        </div>
     </nav>
 </header>
 
-<h1 class="titulo-principal">Produtos Disponíveis</h1>
-
-<section id="listaLoja" class="products"></section>
-
-<script src="index.js"></script>
-</body>
-</html>
+<script src="header.js"></script>
