@@ -1,0 +1,9 @@
+body{background:#111;margin:0;color:white;font-family:Arial;}
+.header{display:flex;justify-content:space-between;padding:15px;background:#000;border-bottom:2px solid #C27023;}
+.logo{height:60px;}
+.produto-area{display:flex;justify-content:center;padding:40px;gap:40px;flex-wrap:wrap;}
+.produto-img{width:380px;border:2px solid #C27023;}
+.produto-info{max-width:350px;}
+.preco{font-size:26px;color:#C27023;}
+.tamanhos label{border:1px solid white;padding:8px;margin:4px;display:inline-block;cursor:pointer;}
+.add-cart{width:100%;padding:12px;background:#C27023;color:white;border:none;font-size:20px;margin-top:15px;}

@@ -1,6 +1,5 @@
 body {background:#111;color:white;font-family:Arial;}
-.login-box{width:300px;margin:120px auto;background:#1A1A1A;padding:25px;
-border:2px solid #C27023;text-align:center;border-radius:10px;}
+.login-box{width:300px;margin:120px auto;background:#1A1A1A;padding:25px;border:2px solid #C27023;text-align:center;border-radius:10px;}
 .login-box input{width:90%;padding:10px;margin:10px 0;background:#222;border:1px solid #444;color:white;}
 button{width:95%;padding:10px;background:#C27023;border:none;cursor:pointer;color:white;}
 .admin-panel{padding:20px;}
