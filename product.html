@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <title>Inferno Nuclear - Produto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="product.css">
 </head>
 <body>
 
-<header class="header">
-    <a href="index.html"><img src="logo.png" class="logo" alt="Inferno Nuclear"></a>
+<header id="header" class="header">
+    <img src="logo.png" id="logo" class="logo" alt="Inferno Nuclear">
+
+    <nav class="menu">
+        <a href="index.html">HOME</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">CATEGORIAS</button>
+            <div class="dropdown-content">
+                <a href="categoria_vestuario.html">VESTUÁRIO</a>
+                <a href="categoria_cerveja.html">CERVEJAS</a>
+                <a href="categoria_acessorios.html">ACESSÓRIOS</a>
+            </div>
+        </div>
+    </nav>
 </header>
 
-<section id="produto-area" class="produto-area"></section>
 
+<main class="produto-main">
+    <section id="produto-area" class="produto-area"></section>
+</main>
+
+<script src="header.js"></script>
 <script src="product.js"></script>
 </body>
 </html>

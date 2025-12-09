@@ -1,6 +1,8 @@
 function carregarProdutosLoja() {
-    let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
-    let area = document.getElementById("listaLoja");
+    const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+    const area = document.getElementById("listaLoja");
+    if (!area) return;
+
     area.innerHTML = "";
 
     produtos.forEach((p, i) => {

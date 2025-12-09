@@ -1,18 +1,19 @@
 const params = new URLSearchParams(window.location.search);
 const id = params.get("id");
-let produtos = JSON.parse(localStorage.getItem("produtos")) || [];
-let p = produtos[id];
-let area = document.getElementById("produto-area");
+const produtos = JSON.parse(localStorage.getItem("produtos")) || [];
+const p = produtos[id];
+const area = document.getElementById("produto-area");
 
 if (!p) {
     area.innerHTML = "<h2>Produto não encontrado.</h2>";
 } else {
     let html = `
-        <img src="${p.imagem}" class="produto-img">
+        <img src="${p.imagem}" class="produto-img" alt="${p.nome}">
         <div class="produto-info">
             <h1>${p.nome}</h1>
             <p class="preco-prod">R$ ${p.preco}</p>
     `;
+
     if (p.categoria === "vestuario") {
         html += `
             <h3>Tamanhos</h3>
@@ -25,6 +26,7 @@ if (!p) {
             </div>
         `;
     }
+
     html += `</div>`;
     area.innerHTML = html;
 }

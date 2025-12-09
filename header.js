@@ -1,6 +1,7 @@
-// LOGO SHRINK EFFECT
+// Efeito de diminuir logo ao rolar a página
 window.addEventListener("scroll", function() {
-    let header = document.getElementById("header");
+    const header = document.getElementById("header");
+    if (!header) return;
 
     if (window.scrollY > 50) {
         header.classList.add("shrink");
